@@ -1,1 +1,30 @@
 // Navigation Styles here
+.nav{
+    border-bottom: 2px dashed @navigation-border;
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav{
+        width: 300px;
+        display: flex;
+        justify-content: space-around;
+
+        p{
+
+            &:hover{
+                color: gray;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+
+    @media @phone{
+        display: flex;
+        flex-direction: column;
+    }
+}

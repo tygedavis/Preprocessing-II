@@ -170,9 +170,9 @@ img {
 }
 .nav {
   border-bottom: 2px dashed #C0C0C0;
-  max-width: 800px;
+  max-width: 100%;
   margin: 0px auto;
-  padding: 20px 0;
+  padding: 20px 24%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -182,7 +182,12 @@ img {
   display: flex;
   justify-content: space-around;
 }
-.nav nav p:hover {
+.nav nav a {
+  color: #212529;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.nav nav a:hover {
   color: gray;
   text-decoration: underline;
   cursor: pointer;
@@ -195,7 +200,9 @@ img {
 }
 @media (max-width: 800px) {
   .nav {
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 5%;
   }
 }
 .footer {
@@ -239,13 +246,15 @@ img {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
-  border-radius: 10px;
-}
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
+    border: 1px solid black;
   }
+}
+.home .content-section .img-content img {
+  border-radius: 10px;
+  width: 100%;
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -254,15 +263,6 @@ img {
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
-}
-.home .inverse-content .img-content {
-  padding-right: 1%;
-  padding-left: 0;
-}
-@media (max-width: 500px) {
-  .home .inverse-content {
-    flex-direction: column-reverse;
-  }
 }
 .home .content-destination {
   width: 75%;

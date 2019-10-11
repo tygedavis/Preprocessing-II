@@ -1,9 +1,9 @@
 // Navigation Styles here
 .nav{
     border-bottom: 2px dashed @navigation-border;
-    max-width: 800px;
+    max-width: 100%;
     margin: 0px auto;
-    padding: 20px 0;
+    padding: 20px 24%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +13,10 @@
         display: flex;
         justify-content: space-around;
 
-        p{
+        a{
+            color: @shark;
+            text-decoration: none;
+            font-size: 1.6rem;
 
             &:hover{
                 color: gray;
@@ -29,6 +32,8 @@
     }
 
     @media @tablet {
-        justify-content: space-around;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 5%;
     }
 }

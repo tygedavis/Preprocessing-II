@@ -249,7 +249,6 @@ img {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
-    border: 1px solid black;
   }
 }
 .home .content-section .img-content img {

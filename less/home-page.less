@@ -22,7 +22,7 @@
 			padding-right: 1%;
 
 			@media @phone {
-				width: 100%;
+        width: 100%;
 			}
 		}
 
@@ -32,8 +32,6 @@
 
       @media @phone{
         width: 100%;
-        
-        
       }
 
 			img {
@@ -49,7 +47,12 @@
 
 		.text-content {
 			padding-left: 1%;
-			padding-right: 0;
+      padding-right: 0;
+    }
+
+    @media @phone{
+      display: flex;
+      flex-direction: column-reverse;
     }
   }
 

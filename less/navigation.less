@@ -1,1 +1,39 @@
 // Navigation Styles here
+.nav{
+    border-bottom: 2px dashed @navigation-border;
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 20px 24%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav{
+        width: 300px;
+        display: flex;
+        justify-content: space-around;
+
+        a{
+            color: @shark;
+            text-decoration: none;
+            font-size: 1.6rem;
+
+            &:hover{
+                color: gray;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+
+    @media @phone{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media @tablet {
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 5%;
+    }
+}
